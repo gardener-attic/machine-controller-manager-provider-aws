@@ -1,0 +1,19 @@
+/args
+/bin
+/.kube-secrets
+/tmp/*
+/dev
+/test
+/logs
+
+*.html
+.vscode
+.idea
+*.DS_Store
+managevm
+controller_manager
+mcm.out
+kubectl
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*coverprofile.out*
