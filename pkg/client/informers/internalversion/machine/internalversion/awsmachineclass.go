@@ -7,10 +7,10 @@ package internalversion
 import (
 	time "time"
 
-	machine "github.com/gardener/aws-driver-grpc/pkg/apis/machine"
-	clientset_internalversion "github.com/gardener/aws-driver-grpc/pkg/client/clientset/internalversion"
-	internalinterfaces "github.com/gardener/aws-driver-grpc/pkg/client/informers/internalversion/internalinterfaces"
-	internalversion "github.com/gardener/aws-driver-grpc/pkg/client/listers/machine/internalversion"
+	machine "github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine"
+	clientset_internalversion "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/clientset/internalversion"
+	internalinterfaces "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/informers/internalversion/internalinterfaces"
+	internalversion "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/listers/machine/internalversion"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	watch "k8s.io/apimachinery/pkg/watch"

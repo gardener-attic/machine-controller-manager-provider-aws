@@ -7,10 +7,10 @@ package v1alpha1
 import (
 	time "time"
 
-	machine_v1alpha1 "github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1"
-	versioned "github.com/gardener/aws-driver-grpc/pkg/client/clientset/versioned"
-	internalinterfaces "github.com/gardener/aws-driver-grpc/pkg/client/informers/externalversions/internalinterfaces"
-	v1alpha1 "github.com/gardener/aws-driver-grpc/pkg/client/listers/machine/v1alpha1"
+	machine_v1alpha1 "github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1"
+	versioned "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/clientset/versioned"
+	internalinterfaces "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/informers/externalversions/internalinterfaces"
+	v1alpha1 "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/listers/machine/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	watch "k8s.io/apimachinery/pkg/watch"

@@ -5,8 +5,8 @@
 package machine
 
 import (
-	internalinterfaces "github.com/gardener/aws-driver-grpc/pkg/client/informers/internalversion/internalinterfaces"
-	internalversion "github.com/gardener/aws-driver-grpc/pkg/client/informers/internalversion/machine/internalversion"
+	internalinterfaces "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/informers/internalversion/internalinterfaces"
+	internalversion "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/informers/internalversion/machine/internalversion"
 )
 
 // Interface provides access to each of this group's versions.

@@ -31,7 +31,7 @@ import (
 
 func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenAPIDefinition {
 	return map[string]common.OpenAPIDefinition{
-		"github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1.AWSBlockDeviceMappingSpec": {
+		"github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1.AWSBlockDeviceMappingSpec": {
 			Schema: spec.Schema{
 				SchemaProps: spec.SchemaProps{
 					Properties: map[string]spec.Schema{
@@ -45,7 +45,7 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 						"ebs": {
 							SchemaProps: spec.SchemaProps{
 								Description: "Parameters used to automatically set up EBS volumes when the machine is launched.",
-								Ref:         ref("github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1.AWSEbsBlockDeviceSpec"),
+								Ref:         ref("github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1.AWSEbsBlockDeviceSpec"),
 							},
 						},
 						"noDevice": {
@@ -66,9 +66,9 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 				},
 			},
 			Dependencies: []string{
-				"github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1.AWSEbsBlockDeviceSpec"},
+				"github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1.AWSEbsBlockDeviceSpec"},
 		},
-		"github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1.AWSEbsBlockDeviceSpec": {
+		"github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1.AWSEbsBlockDeviceSpec": {
 			Schema: spec.Schema{
 				SchemaProps: spec.SchemaProps{
 					Description: "Describes a block device for an EBS volume. Please also see https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EbsBlockDevice",
@@ -113,7 +113,7 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 			},
 			Dependencies: []string{},
 		},
-		"github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1.AWSIAMProfileSpec": {
+		"github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1.AWSIAMProfileSpec": {
 			Schema: spec.Schema{
 				SchemaProps: spec.SchemaProps{
 					Description: "Describes an IAM machine profile.",
@@ -137,7 +137,7 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 			},
 			Dependencies: []string{},
 		},
-		"github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1.AWSMachineClass": {
+		"github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1.AWSMachineClass": {
 			Schema: spec.Schema{
 				SchemaProps: spec.SchemaProps{
 					Description: "AWSMachineClass TODO",
@@ -163,16 +163,16 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 						},
 						"spec": {
 							SchemaProps: spec.SchemaProps{
-								Ref: ref("github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1.AWSMachineClassSpec"),
+								Ref: ref("github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1.AWSMachineClassSpec"),
 							},
 						},
 					},
 				},
 			},
 			Dependencies: []string{
-				"github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1.AWSMachineClassSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+				"github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1.AWSMachineClassSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 		},
-		"github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1.AWSMachineClassList": {
+		"github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1.AWSMachineClassList": {
 			Schema: spec.Schema{
 				SchemaProps: spec.SchemaProps{
 					Description: "AWSMachineClassList is a collection of AWSMachineClasses.",
@@ -202,7 +202,7 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 								Items: &spec.SchemaOrArray{
 									Schema: &spec.Schema{
 										SchemaProps: spec.SchemaProps{
-											Ref: ref("github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1.AWSMachineClass"),
+											Ref: ref("github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1.AWSMachineClass"),
 										},
 									},
 								},
@@ -212,9 +212,9 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 				},
 			},
 			Dependencies: []string{
-				"github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1.AWSMachineClass", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+				"github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1.AWSMachineClass", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 		},
-		"github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1.AWSMachineClassSpec": {
+		"github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1.AWSMachineClassSpec": {
 			Schema: spec.Schema{
 				SchemaProps: spec.SchemaProps{
 					Description: "AWSMachineClassSpec is the specification of a cluster.",
@@ -237,7 +237,7 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 								Items: &spec.SchemaOrArray{
 									Schema: &spec.Schema{
 										SchemaProps: spec.SchemaProps{
-											Ref: ref("github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1.AWSBlockDeviceMappingSpec"),
+											Ref: ref("github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1.AWSBlockDeviceMappingSpec"),
 										},
 									},
 								},
@@ -251,7 +251,7 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 						},
 						"iam": {
 							SchemaProps: spec.SchemaProps{
-								Ref: ref("github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1.AWSIAMProfileSpec"),
+								Ref: ref("github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1.AWSIAMProfileSpec"),
 							},
 						},
 						"machineType": {
@@ -278,7 +278,7 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 								Items: &spec.SchemaOrArray{
 									Schema: &spec.Schema{
 										SchemaProps: spec.SchemaProps{
-											Ref: ref("github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1.AWSNetworkInterfaceSpec"),
+											Ref: ref("github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1.AWSNetworkInterfaceSpec"),
 										},
 									},
 								},
@@ -306,9 +306,9 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 				},
 			},
 			Dependencies: []string{
-				"github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1.AWSBlockDeviceMappingSpec", "github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1.AWSIAMProfileSpec", "github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1.AWSNetworkInterfaceSpec", "k8s.io/api/core/v1.SecretReference"},
+				"github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1.AWSBlockDeviceMappingSpec", "github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1.AWSIAMProfileSpec", "github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1.AWSNetworkInterfaceSpec", "k8s.io/api/core/v1.SecretReference"},
 		},
-		"github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1.AWSNetworkInterfaceSpec": {
+		"github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1.AWSNetworkInterfaceSpec": {
 			Schema: spec.Schema{
 				SchemaProps: spec.SchemaProps{
 					Description: "Describes a network interface. Please also see https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/MachineAWSNetworkInterfaceSpecification",

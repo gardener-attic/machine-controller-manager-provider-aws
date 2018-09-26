@@ -23,7 +23,7 @@ import (
 	"io"
 	"time"
 
-	pb "github.com/gardener/aws-driver-grpc/pkg/grpc/infrapb"
+	pb "github.com/gardener/machine-controller-manager-provider-aws/pkg/grpc/infrapb"
 	"github.com/golang/glog"
 	"google.golang.org/grpc"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

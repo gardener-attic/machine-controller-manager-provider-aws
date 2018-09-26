@@ -3,8 +3,8 @@
 package internalversion
 
 import (
-	machine "github.com/gardener/aws-driver-grpc/pkg/apis/machine"
-	scheme "github.com/gardener/aws-driver-grpc/pkg/client/clientset/internalversion/scheme"
+	machine "github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine"
+	scheme "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/clientset/internalversion/scheme"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"

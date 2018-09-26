@@ -9,9 +9,9 @@ import (
 	sync "sync"
 	time "time"
 
-	versioned "github.com/gardener/aws-driver-grpc/pkg/client/clientset/versioned"
-	internalinterfaces "github.com/gardener/aws-driver-grpc/pkg/client/informers/externalversions/internalinterfaces"
-	machine "github.com/gardener/aws-driver-grpc/pkg/client/informers/externalversions/machine"
+	versioned "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/clientset/versioned"
+	internalinterfaces "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/informers/externalversions/internalinterfaces"
+	machine "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/informers/externalversions/machine"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

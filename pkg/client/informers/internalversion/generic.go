@@ -7,7 +7,7 @@ package internalversion
 import (
 	"fmt"
 
-	machine "github.com/gardener/aws-driver-grpc/pkg/apis/machine"
+	machine "github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
 )
