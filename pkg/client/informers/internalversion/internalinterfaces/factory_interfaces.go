@@ -7,7 +7,7 @@ package internalinterfaces
 import (
 	time "time"
 
-	internalversion "github.com/gardener/aws-driver-grpc/pkg/client/clientset/internalversion"
+	internalversion "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/clientset/internalversion"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	cache "k8s.io/client-go/tools/cache"

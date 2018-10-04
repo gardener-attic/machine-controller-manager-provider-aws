@@ -3,8 +3,8 @@
 package v1alpha1
 
 import (
-	v1alpha1 "github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1"
-	scheme "github.com/gardener/aws-driver-grpc/pkg/client/clientset/versioned/scheme"
+	v1alpha1 "github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1"
+	scheme "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/clientset/versioned/scheme"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"

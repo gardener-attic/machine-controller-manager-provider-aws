@@ -19,8 +19,8 @@ package main
 import (
 	"log"
 
-	"github.com/gardener/aws-driver-grpc/pkg/grpc/infraclient"
-	aws "github.com/gardener/aws-driver-grpc/pkg/providers/driver/aws"
+	"github.com/gardener/machine-controller-manager-provider-aws/pkg/grpc/infraclient"
+	aws "github.com/gardener/machine-controller-manager-provider-aws/pkg/providers/driver/aws"
 	"google.golang.org/grpc"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

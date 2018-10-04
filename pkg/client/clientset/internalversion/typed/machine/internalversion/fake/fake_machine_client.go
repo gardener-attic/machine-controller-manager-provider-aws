@@ -3,7 +3,7 @@
 package fake
 
 import (
-	internalversion "github.com/gardener/aws-driver-grpc/pkg/client/clientset/internalversion/typed/machine/internalversion"
+	internalversion "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/clientset/internalversion/typed/machine/internalversion"
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"
 )

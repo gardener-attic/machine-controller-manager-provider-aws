@@ -27,7 +27,7 @@ import (
 	utilvalidation "k8s.io/apimachinery/pkg/util/validation"
 	"k8s.io/apimachinery/pkg/util/validation/field"
 
-	"github.com/gardener/aws-driver-grpc/pkg/apis/machine"
+	"github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine"
 )
 
 const nameFmt string = `[-a-z0-9]+`

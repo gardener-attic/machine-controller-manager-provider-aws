@@ -28,8 +28,8 @@ import (
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/ec2"
-	v1alpha1 "github.com/gardener/aws-driver-grpc/pkg/apis/machine/v1alpha1"
-	"github.com/gardener/aws-driver-grpc/pkg/grpc/infraclient"
+	v1alpha1 "github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/v1alpha1"
+	"github.com/gardener/machine-controller-manager-provider-aws/pkg/grpc/infraclient"
 	"github.com/golang/glog"
 	corev1 "k8s.io/api/core/v1"
 )

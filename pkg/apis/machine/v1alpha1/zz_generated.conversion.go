@@ -9,7 +9,7 @@ package v1alpha1
 import (
 	unsafe "unsafe"
 
-	machine "github.com/gardener/aws-driver-grpc/pkg/apis/machine"
+	machine "github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine"
 	v1 "k8s.io/api/core/v1"
 	conversion "k8s.io/apimachinery/pkg/conversion"
 	runtime "k8s.io/apimachinery/pkg/runtime"

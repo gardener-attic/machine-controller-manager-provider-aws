@@ -3,7 +3,7 @@
 package fake
 
 import (
-	machineinternalversion "github.com/gardener/aws-driver-grpc/pkg/apis/machine"
+	machineinternalversion "github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

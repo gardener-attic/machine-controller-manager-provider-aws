@@ -3,9 +3,9 @@
 package fake
 
 import (
-	clientset "github.com/gardener/aws-driver-grpc/pkg/client/clientset/internalversion"
-	machineinternalversion "github.com/gardener/aws-driver-grpc/pkg/client/clientset/internalversion/typed/machine/internalversion"
-	fakemachineinternalversion "github.com/gardener/aws-driver-grpc/pkg/client/clientset/internalversion/typed/machine/internalversion/fake"
+	clientset "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/clientset/internalversion"
+	machineinternalversion "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/clientset/internalversion/typed/machine/internalversion"
+	fakemachineinternalversion "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/clientset/internalversion/typed/machine/internalversion/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

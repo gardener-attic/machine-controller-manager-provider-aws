@@ -5,7 +5,7 @@ package scheme
 import (
 	os "os"
 
-	machine "github.com/gardener/aws-driver-grpc/pkg/apis/machine/install"
+	machine "github.com/gardener/machine-controller-manager-provider-aws/pkg/apis/machine/install"
 	announced "k8s.io/apimachinery/pkg/apimachinery/announced"
 	registered "k8s.io/apimachinery/pkg/apimachinery/registered"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"

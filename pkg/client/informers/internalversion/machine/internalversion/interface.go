@@ -5,7 +5,7 @@
 package internalversion
 
 import (
-	internalinterfaces "github.com/gardener/aws-driver-grpc/pkg/client/informers/internalversion/internalinterfaces"
+	internalinterfaces "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/informers/internalversion/internalinterfaces"
 )
 
 // Interface provides access to all the informers in this group version.

@@ -3,7 +3,7 @@
 package versioned
 
 import (
-	machinev1alpha1 "github.com/gardener/aws-driver-grpc/pkg/client/clientset/versioned/typed/machine/v1alpha1"
+	machinev1alpha1 "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/clientset/versioned/typed/machine/v1alpha1"
 	glog "github.com/golang/glog"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"

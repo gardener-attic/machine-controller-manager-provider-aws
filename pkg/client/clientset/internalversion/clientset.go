@@ -3,7 +3,7 @@
 package internalversion
 
 import (
-	machineinternalversion "github.com/gardener/aws-driver-grpc/pkg/client/clientset/internalversion/typed/machine/internalversion"
+	machineinternalversion "github.com/gardener/machine-controller-manager-provider-aws/pkg/client/clientset/internalversion/typed/machine/internalversion"
 	glog "github.com/golang/glog"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
