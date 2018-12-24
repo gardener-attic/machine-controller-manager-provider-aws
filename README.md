@@ -1,3 +1,9 @@
+# :warning: Caution:
+- This project is not being maintained anymore.
+- The out of tree prototype implemented here will not be used in machine-controller-manager ahead, please refer to the related issue for more information:
+    - https://github.com/gardener/machine-controller-manager/issues/178
+    - We are implementing different approach and may replace the content of this repository later.
+
 # machine-controller-manager-provider-aws
 
 - This repository aims to implement the out-of-tree driver support for AWS in [machine-controller-manager](https://github.com/gardener/machine-controller-manager/tree/grpc-driver)
